@@ -1,3 +1,5 @@
+print("Welome to Naivas Supermarket")
+
 #Enter the bill amount
 bill = float(input("Enter the bill: "))
 
