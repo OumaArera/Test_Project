@@ -1,5 +1,13 @@
 # Customer making order in either Small(S), Medium(M) or Large(L)
 order = input("Enter your order: S, M, L: ")
+
+# check if the order is valid
+while order.lower() not in ['s', 'm', 'l']:
+    print("Invalid choice! Check and try again")
+    # ask for order again
+    order = input("Enter your order: S, M, L: ")
+
+#calculating bill based on order
 bill = 0
 
 # customer has ordered small
@@ -49,3 +57,7 @@ elif order.lower() == 'l':
         bill += 1
 
     print(f"Your bill is ${bill}")
+
+else:
+    print("Invalid choice! Check and try again")
+

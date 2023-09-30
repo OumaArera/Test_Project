@@ -44,12 +44,12 @@ percentage_love = round(((total_love_count / total_name_length) * 100), 2)
 #Checking if percentage of love is less than 10 or greater than 90
 
 if percentage_love < 10 or percentage_love > 90:
-    print(f"your score is {percentage_love}, you go together like coke and mentos!")
+    print(f"your score is {percentage_love}%, you go together like coke and mentos!")
 
 #Checking if percentage of love is between 40 and 50
 elif percentage_love > 40 and percentage_love <50:
-    print(f"Your score is {percentage_love}, and you're alright together!")
+    print(f"Your score is {percentage_love}%, and you're alright together!")
 
 else:
-    print(f"Your score is {percentage_love}")
+    print(f"Your score is {percentage_love}%")
 
