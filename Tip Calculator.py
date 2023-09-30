@@ -19,7 +19,7 @@ each_contribution = total_bill / no_of_sharing
 if no_of_sharing == 1:
     pass
 else:
-    print("Each of you will contribute:", round(each_contribution, 2))
+    print("Each of you will contribute:", round(each_contribution))
 
 #Calculating tip
 tip = total_bill - bill

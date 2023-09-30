@@ -1,19 +1,32 @@
-year = int(input("ENter year -4 digit: "))
+print("Welome to Naivas Supermarket")
 
-# checking if year is divisible by 4
+#Enter the bill amount
+bill = float(input("Enter the bill: "))
 
-if year % 4 == 0:
-    # checking if after being divisible by 4 it is not divisible by 100 then it is a leap year
-    if year % 100 != 0:
-        print(f"{year} is a leap year!")
+#Enter the percentage tip
+percentage_tip = float(input("Enter the float percentage: "))
 
-    # if the year is divisible by 100 but still divisible by 400 then it is a leap year
-    else:
-        if year % 400 == 0:
-            print(f"{year} is a leap year!")
-        # Year is not divisible by 400 but is divisible by 100 and 400 is not a leap year
-        else:
-            print(f"{year} is Not a leap year!")
-# Year is not divisible by 4 is automatically not a leap year
+#Calculating total bill ie including tip
+total_bill = bill*(1 + (percentage_tip/100))
+
+#Number of people sharing the bill
+no_of_sharing = int(input("How many are sharing this bill? "))
+
+#Each person contribution
+each_contribution = total_bill / no_of_sharing
+
+#Checking if the bill is to be shared or not
+if no_of_sharing == 1:
+    pass
 else:
-    print(f"{year} is Not a leap year!")
+    print("Each of you will contribute:", round(each_contribution))
+
+#Calculating tip
+tip = total_bill - bill
+
+#Checking if customer gave tip or not
+if tip == 0:
+    print("Total bill =", round(total_bill), "\nThank you for shopping at Naivas. We value you!")
+else:
+    print("Total bill =", round(total_bill), "\nYour Tip to the cashier =", round(tip), "\nThank you for shopping at Naivas. We value you!")
+

@@ -2,7 +2,7 @@ name = input("What is your name? ")
 
 weight = float(input("Enter your weight in kilograms: "))
 height = float(input("Enter your height in centimeters: "))
-bmi = round(weight / (height ** 2))
+bmi = round((weight / (height ** 2)),1)
 
 if bmi < 18.5:
     print(f"{name} you're underweight! Your BMI is {bmi}")
