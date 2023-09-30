@@ -2,11 +2,31 @@ import random
 
 # player choice
 player = int(input("Type 0 for Rock, 1 for Paper or 2 for Scissors: "))
-print(f"Player choice is {player}")
+print(f"You chose {player}")
+
+while player > 2 or player < 0:
+    print("Your choice is out of range!")
+
+    # player choice
+    player = int(input("Type 0 for Rock, 1 for Paper or 2 for Scissors: "))
+    print(f"You chose {player}")
 
 # computer choice
 computer = random.randint(0, 2)
-print(f"Computer choice is {computer}")
+print(f"Computer chose {computer}")
+
+
+#Draw Scenario
+
+while (player == 0 and computer == 0) or (player == 1 and computer == 1) or (player == 2 and computer == 2):
+    print("It is a draw!")
+
+    player = int(input("Type 0 for Rock, 1 for Paper or 2 for Scissors: "))
+    print(f"Player choice is {player}")
+
+    computer = random.randint(0, 2)
+    print(f"Computer choice is {computer}")
+
 
 # Scenario where Player wins
 if player == 0 and computer == 2:
@@ -46,15 +66,4 @@ elif player == 1 and computer == 2:
 
 elif player == 2 and computer == 0:
     print("computer wins!")
-
-# Scenario where there would be a draw
-
-if player == 0 and computer == 0:
-    print("Draw!")
-
-elif player == 1 and computer == 1:
-    print("Draw!")
-
-elif player == 2 and computer == 2:
-    print("Draw!")
 
