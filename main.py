@@ -127,6 +127,12 @@ while random_word != guessed_word:
         if guess == letter:
             guessed_word[position] = letter #appending the letter at the position
 
-    print(f"\n{guessed_word}")
+    #print(f"\n{guessed_word}")
+
+    for char in guessed_word:
+        new_word = "".join(guessed_word)
+    print(f"\nThe word is '{new_word.capitalize()}'")
+
+
 
 
