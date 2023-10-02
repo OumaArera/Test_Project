@@ -90,6 +90,7 @@ life = 0
 #AS long as they are not equal, we keep running the loop
 while random_word != guessed_word:
 
+
     # Checking if "_" is still in guessed word
     # Literally saying that guessed is equal to chosen word
     # At this point we end the game and announce the winner
@@ -98,8 +99,8 @@ while random_word != guessed_word:
         print("\nEnd of game! You won!")
         quit()
 
-    #Since guessed word is not equal to chosen word,
-    #We make a guess
+    # Since guessed word is not equal to chosen word,
+    # We make a guess
 
     guess = input("\nGuess a letter in the random word.(Please make your entries in samll letters): ")
 
