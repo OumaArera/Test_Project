@@ -64,7 +64,7 @@ def encrypt(my_text, my_shift):
             else:
                 decrypted_message += char
 
-        print(f"Your decrypted message is '{decrypted_message}'.")
+        print(f"Your decrypted message is {decrypted_message}")
 
 # continue_game = input("Type Yes if you want to continue playing and No if you want to exit ").lower()
 # if continue_game == "no":
