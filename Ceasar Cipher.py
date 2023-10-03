@@ -5,8 +5,9 @@ alphabet = [" ", "'", "?", ",", ".", "!", "a", "b", "c", "d", "e", "f", "g", "h"
             "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " ", "'", "?", ",", ".", "!", "a", "b", "c", "d",
             "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y",
             "z"]
-#game_on = True
+game_on = True
 #We keep running the game
+# while game_on:
 
 # This line helps to find out if one wants to encrypt or decrypt
 direction = input("Type 'encode' if you're encrypting and 'decode' when decrypting \n")

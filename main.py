@@ -1,75 +1,43 @@
-# Alphabet is the pool where the code picks letters
-# I have repeated the entries to escape the list out of range error
+# Welcoming to the Auction
+print("\nWelcome to the Secret Auction")
 
-alphabet = [" ", "'", "?", ",", ".", "!", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",
-            "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " ", "'", "?", ",", ".", "!", "a", "b", "c", "d",
-            "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y",
-            "z"]
-#game_on = True
-#We keep running the game
+# create empty dictionary for my_dict and empty list for bids
+my_dict = {}
+bids = []
 
-# This line helps to find out if one wants to encrypt or decrypt
-direction = input("Type 'encode' if you're encrypting and 'decode' when decrypting \n")
+# We set the bid_on to true
+# To check if the bid is still continue
+bid_on = True
 
-# Message
-text = input("Enter your massage \n").lower()
+# We create a loop to ensure the bidding continues
+while bid_on:
 
-# This is the shifting amount
-shift = int(input("Type the shift number \n"))
-shift = shift % 32
+    # Game start with the next bidder
+    next_bidder = input("\nIs there another bidder? Type Y or N ").lower()
 
+    # if response of next_bidder is y or yes then the game continues
+    if next_bidder == "y" or next_bidder == "yes":
 
-# The function
-def encrypt(my_text, my_shift):
-    # We create an empty crypted and decrypted message
-    encrypted_message = ""
-    decrypted_message = ""
+        name = input("\nWhat is your name? ")
+        bid = int(input("\nEnter your bid "))
 
-    # Checking if one wants to encrypt
-    if direction.lower() == "encode":
+        # Add bid to the list bids
+        bids.append(bid)
 
-        # Checking for the characters in text
-        for char in my_text:
+        # Add key = name and value = bid to my_dict
+        my_dict[name] = bid
 
-            # Checking if the entered character is in the alphabet
-            # Incase it is not in the list, we maintain them without shifting
-            if char in alphabet:
-                position = alphabet.index(char)
-                new_position = position + my_shift
+    # In case the next_bidder says anything other than y or yes
+    # Then bid_on is False
+    else:
+        bid_on = False
+        print("\nEnd of game!")
 
-                # Adding the character to empty encrypted_message
-                encrypted_message += alphabet[new_position]
+        # Check for the highest bid in the bids list
+        highest_bid = max(bids)
 
-            else:
-                encrypted_message += char
-
-        print(f"Your encrypted message is '{encrypted_message}'.")
-
-    # Checking if one wants to encrypt
-    elif direction.lower() == "decode":
-
-        # Checking for the characters in text
-        for char in my_text:
-
-            # Checking if the entered character is in the alphabet
-            # Incase it is not in the list, we maintain them without shifting
-            if char in alphabet:
-
-                position = alphabet.index(char)
-                new_position = position - my_shift
-                decrypted_message += alphabet[new_position]
-                decrypted_message = decrypted_message.capitalize()
-
-            else:
-                decrypted_message += char
-
-        print(f"Your decrypted message is '{decrypted_message}'.")
-
-# continue_game = input("Type Yes if you want to continue playing and No if you want to exit ").lower()
-# if continue_game == "no":
-#     game_on = False
-#     print("Game finished!")
-
-
-encrypt(text, shift)
-
+        # checking if the highest value in the dictionary is equal to the highest value in bids
+        # In that case we print the key and value
+        for key in my_dict:
+            if my_dict[key] == highest_bid:  # check if the bid in the dictionary matches the highest bid
+                print(f"\nWinner is {key} who's bid is {highest_bid}.")
