@@ -1,4 +1,7 @@
-#This calculator does operations of not more than two entries
+#Our Calculator is good now
+#It can handle simple arithmetic operations
+#It can handle trigonometry
+#It can handle log, and exponentials
 
 from math import factorial
 from math import sin
@@ -23,125 +26,1977 @@ def calculator(symbol,entry1, entry2):
 
     if symbol == "x":
         product = entry1 * entry2
+
+        #Continuing with operation
+        continue_operation = True
+        other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+        #If one wishes to continue with operations
+        if other_operation == "y":
+
+            #Operations continue in a loop unless terminated
+            while continue_operation:
+
+                operator3 = input("\nType an operation type ").lower()
+
+                third_entry = float(input("\nEnter number "))
+
+                #Multiplying
+                if operator3 == "x":
+                    product = product * third_entry
+
+                #Dividing
+                elif operator3 == "/":
+                    product = product / third_entry
+
+                #Adding
+                elif operator3 == "+":
+                    product = product + third_entry
+
+                #Subtracting
+                elif operator3 == "-":
+                    product = product - third_entry
+
+                #Log operation
+                elif operator3 == "log":
+                    product = log(product)
+
+                #Exponential operation
+                elif operator3 == "e":
+                    product = exp(product)
+
+                #Sin operation
+                elif operator3 == "sin":
+                    product = cosh(product)
+
+                #Cosine operation
+                elif operator3 == "cos":
+                    product = cos(product)
+
+                #Coshine operation
+                elif operator3 == "cosh":
+                    product = cosh(product)
+
+                #Tan operation
+                elif operator3 == "tan":
+                    product = tan(product)
+
+                #Sin inverse
+                elif operator3 == "sin-1":
+                    product = asin(product)
+
+                #Cos inverse
+                elif operator3 == "cos-1":
+                    product = acos(product)
+
+                #Cosh inverse
+                elif operator3 == "cosh-1":
+                    product = acosh(product)
+
+                #Raising product to power n
+                elif operator3 == "^":
+                    product = product ** third_entry
+
+                #Square root of product
+                elif operator3 == "rt":
+                    product = sqrt(product)
+
+                #Multiplying product by pi
+                elif operator3 == "pi":
+                    product = product * pi
+
+                #Finding modulus of product
+                elif operator3 == "%":
+                    product = product % third_entry
+
+                # Terminate the loop
+                # returns the answer
+                elif operator3 == "=":
+                    print(f"= {product}")
+
+
         return product
 
     #Dividing
     elif symbol == "/":
         product = entry1 / entry2
+
+        #Continuing with operation
+        continue_operation = True
+        other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+        #If one wishes to continue with operations
+        if other_operation == "y":
+
+            #Operations continue in a loop unless terminated
+            while continue_operation:
+
+                operator3 = input("\nType an operation type ").lower()
+
+                third_entry = float(input("\nEnter number "))
+
+                #Multiplying
+                if operator3 == "x":
+                    product = product * third_entry
+
+                #Dividing
+                elif operator3 == "/":
+                    product = product / third_entry
+
+                #Adding
+                elif operator3 == "+":
+                    product = product + third_entry
+
+                #Subtracting
+                elif operator3 == "-":
+                    product = product - third_entry
+
+                #Log operation
+                elif operator3 == "log":
+                    product = log(product)
+
+                #Exponential operation
+                elif operator3 == "e":
+                    product = exp(product)
+
+                #Sin operation
+                elif operator3 == "sin":
+                    product = cosh(product)
+
+                #Cosine operation
+                elif operator3 == "cos":
+                    product = cos(product)
+
+                #Coshine operation
+                elif operator3 == "cosh":
+                    product = cosh(product)
+
+                #Tan operation
+                elif operator3 == "tan":
+                    product = tan(product)
+
+                #Sin inverse
+                elif operator3 == "sin-1":
+                    product = asin(product)
+
+                #Cos inverse
+                elif operator3 == "cos-1":
+                    product = acos(product)
+
+                #Cosh inverse
+                elif operator3 == "cosh-1":
+                    product = acosh(product)
+
+                #Raising product to power n
+                elif operator3 == "^":
+                    product = product ** third_entry
+
+                #Square root of product
+                elif operator3 == "rt":
+                    product = sqrt(product)
+
+                #Multiplying product by pi
+                elif operator3 == "pi":
+                    product = product * pi
+
+                #Finding modulus of product
+                elif operator3 == "%":
+                    product = product % third_entry
+
+                #Terminate the loop
+                #returns the answer
+                elif operator3 == "=":
+                    print(f"= {product}")
+
         return product
 
     #Adding
     elif symbol == "+":
         product = entry1 + entry2
+
+        #Continuing with operation
+        continue_operation = True
+        other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+        #If one wishes to continue with operations
+        if other_operation == "y":
+
+            #Operations continue in a loop unless terminated
+            while continue_operation:
+
+                operator3 = input("\nType an operation type ").lower()
+
+                third_entry = float(input("\nEnter number "))
+
+                #Multiplying
+                if operator3 == "x":
+                    product = product * third_entry
+
+                #Dividing
+                elif operator3 == "/":
+                    product = product / third_entry
+
+                #Adding
+                elif operator3 == "+":
+                    product = product + third_entry
+
+                #Subtracting
+                elif operator3 == "-":
+                    product = product - third_entry
+
+                #Log operation
+                elif operator3 == "log":
+                    product = log(product)
+
+                #Exponential operation
+                elif operator3 == "e":
+                    product = exp(product)
+
+                #Sin operation
+                elif operator3 == "sin":
+                    product = cosh(product)
+
+                #Cosine operation
+                elif operator3 == "cos":
+                    product = cos(product)
+
+                #Coshine operation
+                elif operator3 == "cosh":
+                    product = cosh(product)
+
+                #Tan operation
+                elif operator3 == "tan":
+                    product = tan(product)
+
+                #Sin inverse
+                elif operator3 == "sin-1":
+                    product = asin(product)
+
+                #Cos inverse
+                elif operator3 == "cos-1":
+                    product = acos(product)
+
+                #Cosh inverse
+                elif operator3 == "cosh-1":
+                    product = acosh(product)
+
+                #Raising product to power n
+                elif operator3 == "^":
+                    product = product ** third_entry
+
+                #Square root of product
+                elif operator3 == "rt":
+                    product = sqrt(product)
+
+                #Multiplying product by pi
+                elif operator3 == "pi":
+                    product = product * pi
+
+                #Finding modulus of product
+                elif operator3 == "%":
+                    product = product % third_entry
+
+                #Terminate the loop
+                #returns the answer
+                elif operator3 == "=":
+                    print(f"= {product}")
+
         return product
 
     #Subtracting
     elif symbol == "-":
         product = entry1 - entry2
+
+        #Continuing with operation
+        continue_operation = True
+        other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+        #If one wishes to continue with operations
+        if other_operation == "y":
+
+            #Operations continue in a loop unless terminated
+            while continue_operation:
+
+                operator3 = input("\nType an operation type ").lower()
+
+                third_entry = float(input("\nEnter number "))
+
+                #Multiplying
+                if operator3 == "x":
+                    product = product * third_entry
+
+                #Dividing
+                elif operator3 == "/":
+                    product = product / third_entry
+
+                #Adding
+                elif operator3 == "+":
+                    product = product + third_entry
+
+                #Subtracting
+                elif operator3 == "-":
+                    product = product - third_entry
+
+                #Log operation
+                elif operator3 == "log":
+                    product = log(product)
+
+                #Exponential operation
+                elif operator3 == "e":
+                    product = exp(product)
+
+                #Sin operation
+                elif operator3 == "sin":
+                    product = cosh(product)
+
+                #Cosine operation
+                elif operator3 == "cos":
+                    product = cos(product)
+
+                #Coshine operation
+                elif operator3 == "cosh":
+                    product = cosh(product)
+
+                #Tan operation
+                elif operator3 == "tan":
+                    product = tan(product)
+
+                #Sin inverse
+                elif operator3 == "sin-1":
+                    product = asin(product)
+
+                #Cos inverse
+                elif operator3 == "cos-1":
+                    product = acos(product)
+
+                #Cosh inverse
+                elif operator3 == "cosh-1":
+                    product = acosh(product)
+
+                #Raising product to power n
+                elif operator3 == "^":
+                    product = product ** third_entry
+
+                #Square root of product
+                elif operator3 == "rt":
+                    product = sqrt(product)
+
+                #Multiplying product by pi
+                elif operator3 == "pi":
+                    product = product * pi
+
+                #Finding modulus of product
+                elif operator3 == "%":
+                    product = product % third_entry
+
+                #Terminate the loop
+                #returns the answer
+                elif operator3 == "=":
+                    print(f"= {product}")
+
         return product
 
     #Raising to power
     elif symbol == "^":
         product = entry1 ** entry2
+
+        #Continuing with operation
+        continue_operation = True
+        other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+        #If one wishes to continue with operations
+        if other_operation == "y":
+
+            #Operations continue in a loop unless terminated
+            while continue_operation:
+
+                operator3 = input("\nType an operation type ").lower()
+
+                third_entry = float(input("\nEnter number "))
+
+                #Multiplying
+                if operator3 == "x":
+                    product = product * third_entry
+
+                #Dividing
+                elif operator3 == "/":
+                    product = product / third_entry
+
+                #Adding
+                elif operator3 == "+":
+                    product = product + third_entry
+
+                #Subtracting
+                elif operator3 == "-":
+                    product = product - third_entry
+
+                #Log operation
+                elif operator3 == "log":
+                    product = log(product)
+
+                #Exponential operation
+                elif operator3 == "e":
+                    product = exp(product)
+
+                #Sin operation
+                elif operator3 == "sin":
+                    product = cosh(product)
+
+                #Cosine operation
+                elif operator3 == "cos":
+                    product = cos(product)
+
+                #Coshine operation
+                elif operator3 == "cosh":
+                    product = cosh(product)
+
+                #Tan operation
+                elif operator3 == "tan":
+                    product = tan(product)
+
+                #Sin inverse
+                elif operator3 == "sin-1":
+                    product = asin(product)
+
+                #Cos inverse
+                elif operator3 == "cos-1":
+                    product = acos(product)
+
+                #Cosh inverse
+                elif operator3 == "cosh-1":
+                    product = acosh(product)
+
+                #Raising product to power n
+                elif operator3 == "^":
+                    product = product ** third_entry
+
+                #Square root of product
+                elif operator3 == "rt":
+                    product = sqrt(product)
+
+                #Multiplying product by pi
+                elif operator3 == "pi":
+                    product = product * pi
+
+                #Finding modulus of product
+                elif operator3 == "%":
+                    product = product % third_entry
+
+                #Terminate the loop
+                #returns the answer
+                elif operator3 == "=":
+                    print(f"= {product}")
+
         return product
+
+    #Power to the nth number
     elif symbol == "nrt":
         product = entry1 ** (1/entry2)
+
+        #Continuing with operation
+        continue_operation = True
+        other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+        #If one wishes to continue with operations
+        if other_operation == "y":
+
+            #Operations continue in a loop unless terminated
+            while continue_operation:
+
+                operator3 = input("\nType an operation type ").lower()
+
+                third_entry = float(input("\nEnter number "))
+
+                #Multiplying
+                if operator3 == "x":
+                    product = product * third_entry
+
+                #Dividing
+                elif operator3 == "/":
+                    product = product / third_entry
+
+                #Adding
+                elif operator3 == "+":
+                    product = product + third_entry
+
+                #Subtracting
+                elif operator3 == "-":
+                    product = product - third_entry
+
+                #Log operation
+                elif operator3 == "log":
+                    product = log(product)
+
+                #Exponential operation
+                elif operator3 == "e":
+                    product = exp(product)
+
+                #Sin operation
+                elif operator3 == "sin":
+                    product = cosh(product)
+
+                #Cosine operation
+                elif operator3 == "cos":
+                    product = cos(product)
+
+                #Coshine operation
+                elif operator3 == "cosh":
+                    product = cosh(product)
+
+                #Tan operation
+                elif operator3 == "tan":
+                    product = tan(product)
+
+                #Sin inverse
+                elif operator3 == "sin-1":
+                    product = asin(product)
+
+                #Cos inverse
+                elif operator3 == "cos-1":
+                    product = acos(product)
+
+                #Cosh inverse
+                elif operator3 == "cosh-1":
+                    product = acosh(product)
+
+                #Raising product to power n
+                elif operator3 == "^":
+                    product = product ** third_entry
+
+                #Square root of product
+                elif operator3 == "rt":
+                    product = sqrt(product)
+
+                #Multiplying product by pi
+                elif operator3 == "pi":
+                    product = product * pi
+
+                #Finding modulus of product
+                elif operator3 == "%":
+                    product = product % third_entry
+
+                #Terminate the loop
+                #returns the answer
+                elif operator3 == "=":
+                    print(f"= {product}")
+
         return product
 
-    elif symbol == "|":
+    #Modulus
+    elif symbol == "%":
         product = entry1 % entry2
+
+        #Continuing with operation
+        continue_operation = True
+        other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+        #If one wishes to continue with operations
+        if other_operation == "y":
+
+            #Operations continue in a loop unless terminated
+            while continue_operation:
+
+                operator3 = input("\nType an operation type ").lower()
+
+                third_entry = float(input("\nEnter number "))
+
+                #Multiplying
+                if operator3 == "x":
+                    product = product * third_entry
+
+                #Dividing
+                elif operator3 == "/":
+                    product = product / third_entry
+
+                #Adding
+                elif operator3 == "+":
+                    product = product + third_entry
+
+                #Subtracting
+                elif operator3 == "-":
+                    product = product - third_entry
+
+                #Log operation
+                elif operator3 == "log":
+                    product = log(product)
+
+                #Exponential operation
+                elif operator3 == "e":
+                    product = exp(product)
+
+                #Sin operation
+                elif operator3 == "sin":
+                    product = cosh(product)
+
+                #Cosine operation
+                elif operator3 == "cos":
+                    product = cos(product)
+
+                #Coshine operation
+                elif operator3 == "cosh":
+                    product = cosh(product)
+
+                #Tan operation
+                elif operator3 == "tan":
+                    product = tan(product)
+
+                #Sin inverse
+                elif operator3 == "sin-1":
+                    product = asin(product)
+
+                #Cos inverse
+                elif operator3 == "cos-1":
+                    product = acos(product)
+
+                #Cosh inverse
+                elif operator3 == "cosh-1":
+                    product = acosh(product)
+
+                #Raising product to power n
+                elif operator3 == "^":
+                    product = product ** third_entry
+
+                #Square root of product
+                elif operator3 == "rt":
+                    product = sqrt(product)
+
+                #Multiplying product by pi
+                elif operator3 == "pi":
+                    product = product * pi
+
+                #Finding modulus of product
+                elif operator3 == "%":
+                    product = product % third_entry
+
+                #Terminate the loop
+                #returns the answer
+                elif operator3 == "=":
+                    print(f"= {product}")
+
         return product
 
+    #Log to base n
     elif symbol == "logn":
         product = log(entry1,entry2)
+
+        #Continuing with operation
+        continue_operation = True
+        other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+        #If one wishes to continue with operations
+        if other_operation == "y":
+
+            #Operations continue in a loop unless terminated
+            while continue_operation:
+
+                operator3 = input("\nType an operation type ").lower()
+
+                third_entry = float(input("\nEnter number "))
+
+                #Multiplying
+                if operator3 == "x":
+                    product = product * third_entry
+
+                #Dividing
+                elif operator3 == "/":
+                    product = product / third_entry
+
+                #Adding
+                elif operator3 == "+":
+                    product = product + third_entry
+
+                #Subtracting
+                elif operator3 == "-":
+                    product = product - third_entry
+
+                #Log operation
+                elif operator3 == "log":
+                    product = log(product)
+
+                #Exponential operation
+                elif operator3 == "e":
+                    product = exp(product)
+
+                #Sin operation
+                elif operator3 == "sin":
+                    product = cosh(product)
+
+                #Cosine operation
+                elif operator3 == "cos":
+                    product = cos(product)
+
+                #Coshine operation
+                elif operator3 == "cosh":
+                    product = cosh(product)
+
+                #Tan operation
+                elif operator3 == "tan":
+                    product = tan(product)
+
+                #Sin inverse
+                elif operator3 == "sin-1":
+                    product = asin(product)
+
+                #Cos inverse
+                elif operator3 == "cos-1":
+                    product = acos(product)
+
+                #Cosh inverse
+                elif operator3 == "cosh-1":
+                    product = acosh(product)
+
+                #Raising product to power n
+                elif operator3 == "^":
+                    product = product ** third_entry
+
+                #Square root of product
+                elif operator3 == "rt":
+                    product = sqrt(product)
+
+                #Multiplying product by pi
+                elif operator3 == "pi":
+                    product = product * pi
+
+                #Finding modulus of product
+                elif operator3 == "%":
+                    product = product % third_entry
+
+                #Terminate the loop
+                #returns the answer
+                elif operator3 == "=":
+                    print(f"= {product}")
+
         return product
 
 
 
-first_entry = int(input("\nEnter the first value: "))
+first_entry = float(input("\nEnter the first value: "))
 
 #Operation symbol
-operator = input("\nSelect symbol, x,/, +, -, ^, rt, !, e, nrt, cos, cosh, sin, tan, pi, %, |, log, logn, sin-1, cos-1, tan-1, cosh-1: ").lower()
+operator = input("\nSelect symbol, x,/, +, -, ^, rt, !, e, nrt, cos, cosh, sin, tan, pi, %, log, logn, sin-1, cos-1, tan-1, cosh-1: ").lower()
 
 #checking for square root
 if operator == "rt":
-    square_root =sqrt(first_entry)
-    print(f"\n= {square_root}")
+    product =sqrt(first_entry)
+
+    #Continuing with operation
+    continue_operation = True
+    other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+    #If one wishes to continue with operations
+    if other_operation == "y":
+
+        #Operations continue in a loop unless terminated
+        while continue_operation:
+
+            operator3 = input("\nType an operation type ").lower()
+
+            third_entry = float(input("\nEnter number "))
+
+            #Multiplying
+            if operator3 == "x":
+                product = product * third_entry
+
+            #Dividing
+            elif operator3 == "/":
+                product = product / third_entry
+
+            #Adding
+            elif operator3 == "+":
+                product = product + third_entry
+
+            #Subtracting
+            elif operator3 == "-":
+                product = product - third_entry
+
+            #Log operation
+            elif operator3 == "log":
+                product = log(product)
+
+            #Exponential operation
+            elif operator3 == "e":
+                product = exp(product)
+
+            #Sin operation
+            elif operator3 == "sin":
+                product = cosh(product)
+
+            #Cosine operation
+            elif operator3 == "cos":
+                product = cos(product)
+
+            #Coshine operation
+            elif operator3 == "cosh":
+                product = cosh(product)
+
+            #Tan operation
+            elif operator3 == "tan":
+                product = tan(product)
+
+            #Sin inverse
+            elif operator3 == "sin-1":
+                product = asin(product)
+
+            #Cos inverse
+            elif operator3 == "cos-1":
+                product = acos(product)
+
+            #Cosh inverse
+            elif operator3 == "cosh-1":
+                product = acosh(product)
+
+            #Raising product to power n
+            elif operator3 == "^":
+                product = product ** third_entry
+
+            #Square root of product
+            elif operator3 == "rt":
+                product = sqrt(product)
+
+            #Multiplying product by pi
+            elif operator3 == "pi":
+                product = product * pi
+
+            #Finding modulus of product
+            elif operator3 == "%":
+                product = product % third_entry
+
+            #Terminate the loop
+            #returns the answer
+            elif operator3 == "=":
+                print(f"= {product}")
+
+    print(f"\n= {product}")
     quit()
 
 #checking if it is factorial
 elif operator == "!":
-    fact = factorial(first_entry)
-    print(f"\n= {fact}")
+    product = factorial(first_entry)
+
+    #Continuing with operation
+    continue_operation = True
+    other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+    #If one wishes to continue with operations
+    if other_operation == "y":
+
+        #Operations continue in a loop unless terminated
+        while continue_operation:
+
+            operator3 = input("\nType an operation type ").lower()
+
+            third_entry = float(input("\nEnter number "))
+
+            #Multiplying
+            if operator3 == "x":
+                product = product * third_entry
+
+            #Dividing
+            elif operator3 == "/":
+                product = product / third_entry
+
+            #Adding
+            elif operator3 == "+":
+                product = product + third_entry
+
+            #Subtracting
+            elif operator3 == "-":
+                product = product - third_entry
+
+            #Log operation
+            elif operator3 == "log":
+                product = log(product)
+
+            #Exponential operation
+            elif operator3 == "e":
+                product = exp(product)
+
+            #Sin operation
+            elif operator3 == "sin":
+                product = cosh(product)
+
+            #Cosine operation
+            elif operator3 == "cos":
+                product = cos(product)
+
+            #Coshine operation
+            elif operator3 == "cosh":
+                product = cosh(product)
+
+            #Tan operation
+            elif operator3 == "tan":
+                product = tan(product)
+
+            #Sin inverse
+            elif operator3 == "sin-1":
+                product = asin(product)
+
+            #Cos inverse
+            elif operator3 == "cos-1":
+                product = acos(product)
+
+            #Cosh inverse
+            elif operator3 == "cosh-1":
+                product = acosh(product)
+
+            #Raising product to power n
+            elif operator3 == "^":
+                product = product ** third_entry
+
+            #Square root of product
+            elif operator3 == "rt":
+                product = sqrt(product)
+
+            #Multiplying product by pi
+            elif operator3 == "pi":
+                product = product * pi
+
+            #Finding modulus of product
+            elif operator3 == "%":
+                product = product % third_entry
+
+            #Terminate the loop
+            #returns the answer
+            elif operator3 == "=":
+                print(f"= {product}")
+
+    print(f"\n= {product}")
     quit()
 
 #Exponential
 elif operator == "e":
     product = exp(first_entry)
+
+    #Continuing with operation
+    continue_operation = True
+    other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+    #If one wishes to continue with operations
+    if other_operation == "y":
+
+        #Operations continue in a loop unless terminated
+        while continue_operation:
+
+            operator3 = input("\nType an operation type ").lower()
+
+            third_entry = float(input("\nEnter number "))
+
+            #Multiplying
+            if operator3 == "x":
+                product = product * third_entry
+
+            #Dividing
+            elif operator3 == "/":
+                product = product / third_entry
+
+            #Adding
+            elif operator3 == "+":
+                product = product + third_entry
+
+            #Subtracting
+            elif operator3 == "-":
+                product = product - third_entry
+
+            #Log operation
+            elif operator3 == "log":
+                product = log(product)
+
+            #Exponential operation
+            elif operator3 == "e":
+                product = exp(product)
+
+            #Sin operation
+            elif operator3 == "sin":
+                product = cosh(product)
+
+            #Cosine operation
+            elif operator3 == "cos":
+                product = cos(product)
+
+            #Coshine operation
+            elif operator3 == "cosh":
+                product = cosh(product)
+
+            #Tan operation
+            elif operator3 == "tan":
+                product = tan(product)
+
+            #Sin inverse
+            elif operator3 == "sin-1":
+                product = asin(product)
+
+            #Cos inverse
+            elif operator3 == "cos-1":
+                product = acos(product)
+
+            #Cosh inverse
+            elif operator3 == "cosh-1":
+                product = acosh(product)
+
+            #Raising product to power n
+            elif operator3 == "^":
+                product = product ** third_entry
+
+            #Square root of product
+            elif operator3 == "rt":
+                product = sqrt(product)
+
+            #Multiplying product by pi
+            elif operator3 == "pi":
+                product = product * pi
+
+            #Finding modulus of product
+            elif operator3 == "%":
+                product = product % third_entry
+
+            #Terminate the loop
+            #returns the answer
+            elif operator3 == "=":
+                print(f"= {product}")
+
     print(f"\n= {product}")
     quit()
 
 #Sin operation
 elif operator == "sin":
     product = sin(first_entry)
+
+    #Continuing with operation
+    continue_operation = True
+    other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+    #If one wishes to continue with operations
+    if other_operation == "y":
+
+        #Operations continue in a loop unless terminated
+        while continue_operation:
+
+            operator3 = input("\nType an operation type ").lower()
+
+            third_entry = float(input("\nEnter number "))
+
+            #Multiplying
+            if operator3 == "x":
+                product = product * third_entry
+
+            #Dividing
+            elif operator3 == "/":
+                product = product / third_entry
+
+            #Adding
+            elif operator3 == "+":
+                product = product + third_entry
+
+            #Subtracting
+            elif operator3 == "-":
+                product = product - third_entry
+
+            #Log operation
+            elif operator3 == "log":
+                product = log(product)
+
+            #Exponential operation
+            elif operator3 == "e":
+                product = exp(product)
+
+            #Sin operation
+            elif operator3 == "sin":
+                product = cosh(product)
+
+            #Cosine operation
+            elif operator3 == "cos":
+                product = cos(product)
+
+            #Coshine operation
+            elif operator3 == "cosh":
+                product = cosh(product)
+
+            #Tan operation
+            elif operator3 == "tan":
+                product = tan(product)
+
+            #Sin inverse
+            elif operator3 == "sin-1":
+                product = asin(product)
+
+            #Cos inverse
+            elif operator3 == "cos-1":
+                product = acos(product)
+
+            #Cosh inverse
+            elif operator3 == "cosh-1":
+                product = acosh(product)
+
+            #Raising product to power n
+            elif operator3 == "^":
+                product = product ** third_entry
+
+            #Square root of product
+            elif operator3 == "rt":
+                product = sqrt(product)
+
+            #Multiplying product by pi
+            elif operator3 == "pi":
+                product = product * pi
+
+            #Finding modulus of product
+            elif operator3 == "%":
+                product = product % third_entry
+
+            #Terminate the loop
+            #returns the answer
+            elif operator3 == "=":
+                print(f"= {product}")
+
     print(f"\n= {product}")
     quit()
 
 #Sine inverse
 elif operator == "sin-1":
     product = asin(first_entry)
+
+    #Continuing with operation
+    continue_operation = True
+    other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+    #If one wishes to continue with operations
+    if other_operation == "y":
+
+        #Operations continue in a loop unless terminated
+        while continue_operation:
+
+            operator3 = input("\nType an operation type ").lower()
+
+            third_entry = float(input("\nEnter number "))
+
+            #Multiplying
+            if operator3 == "x":
+                product = product * third_entry
+
+            #Dividing
+            elif operator3 == "/":
+                product = product / third_entry
+
+            #Adding
+            elif operator3 == "+":
+                product = product + third_entry
+
+            #Subtracting
+            elif operator3 == "-":
+                product = product - third_entry
+
+            #Log operation
+            elif operator3 == "log":
+                product = log(product)
+
+            #Exponential operation
+            elif operator3 == "e":
+                product = exp(product)
+
+            #Sin operation
+            elif operator3 == "sin":
+                product = cosh(product)
+
+            #Cosine operation
+            elif operator3 == "cos":
+                product = cos(product)
+
+            #Coshine operation
+            elif operator3 == "cosh":
+                product = cosh(product)
+
+            #Tan operation
+            elif operator3 == "tan":
+                product = tan(product)
+
+            #Sin inverse
+            elif operator3 == "sin-1":
+                product = asin(product)
+
+            #Cos inverse
+            elif operator3 == "cos-1":
+                product = acos(product)
+
+            #Cosh inverse
+            elif operator3 == "cosh-1":
+                product = acosh(product)
+
+            #Raising product to power n
+            elif operator3 == "^":
+                product = product ** third_entry
+
+            #Square root of product
+            elif operator3 == "rt":
+                product = sqrt(product)
+
+            #Multiplying product by pi
+            elif operator3 == "pi":
+                product = product * pi
+
+            #Finding modulus of product
+            elif operator3 == "%":
+                product = product % third_entry
+
+            #Terminate the loop
+            #returns the answer
+            elif operator3 == "=":
+                print(f"= {product}")
+
     print(f"\n= {product}")
     quit()
 
 #Cosine operation
 elif operator == "cos":
     product = cos(first_entry)
+
+    #Continuing with operation
+    continue_operation = True
+    other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+    #If one wishes to continue with operations
+    if other_operation == "y":
+
+        #Operations continue in a loop unless terminated
+        while continue_operation:
+
+            operator3 = input("\nType an operation type ").lower()
+
+            third_entry = float(input("\nEnter number "))
+
+            #Multiplying
+            if operator3 == "x":
+                product = product * third_entry
+
+            #Dividing
+            elif operator3 == "/":
+                product = product / third_entry
+
+            #Adding
+            elif operator3 == "+":
+                product = product + third_entry
+
+            #Subtracting
+            elif operator3 == "-":
+                product = product - third_entry
+
+            #Log operation
+            elif operator3 == "log":
+                product = log(product)
+
+            #Exponential operation
+            elif operator3 == "e":
+                product = exp(product)
+
+            #Sin operation
+            elif operator3 == "sin":
+                product = cosh(product)
+
+            #Cosine operation
+            elif operator3 == "cos":
+                product = cos(product)
+
+            #Coshine operation
+            elif operator3 == "cosh":
+                product = cosh(product)
+
+            #Tan operation
+            elif operator3 == "tan":
+                product = tan(product)
+
+            #Sin inverse
+            elif operator3 == "sin-1":
+                product = asin(product)
+
+            #Cos inverse
+            elif operator3 == "cos-1":
+                product = acos(product)
+
+            #Cosh inverse
+            elif operator3 == "cosh-1":
+                product = acosh(product)
+
+            #Raising product to power n
+            elif operator3 == "^":
+                product = product ** third_entry
+
+            #Square root of product
+            elif operator3 == "rt":
+                product = sqrt(product)
+
+            #Multiplying product by pi
+            elif operator3 == "pi":
+                product = product * pi
+
+            #Finding modulus of product
+            elif operator3 == "%":
+                product = product % third_entry
+
+            #Terminate the loop
+            #returns the answer
+            elif operator3 == "=":
+                print(f"= {product}")
+
     print(f"\n= {product}")
     quit()
 
 #Cosine inverse
 elif operator == "cos-1":
     product = acos(first_entry)
+
+    #Continuing with operation
+    continue_operation = True
+    other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+    #If one wishes to continue with operations
+    if other_operation == "y":
+
+        #Operations continue in a loop unless terminated
+        while continue_operation:
+
+            operator3 = input("\nType an operation type ").lower()
+
+            third_entry = float(input("\nEnter number "))
+
+            #Multiplying
+            if operator3 == "x":
+                product = product * third_entry
+
+            #Dividing
+            elif operator3 == "/":
+                product = product / third_entry
+
+            #Adding
+            elif operator3 == "+":
+                product = product + third_entry
+
+            #Subtracting
+            elif operator3 == "-":
+                product = product - third_entry
+
+            #Log operation
+            elif operator3 == "log":
+                product = log(product)
+
+            #Exponential operation
+            elif operator3 == "e":
+                product = exp(product)
+
+            #Sin operation
+            elif operator3 == "sin":
+                product = cosh(product)
+
+            #Cosine operation
+            elif operator3 == "cos":
+                product = cos(product)
+
+            #Coshine operation
+            elif operator3 == "cosh":
+                product = cosh(product)
+
+            #Tan operation
+            elif operator3 == "tan":
+                product = tan(product)
+
+            #Sin inverse
+            elif operator3 == "sin-1":
+                product = asin(product)
+
+            #Cos inverse
+            elif operator3 == "cos-1":
+                product = acos(product)
+
+            #Cosh inverse
+            elif operator3 == "cosh-1":
+                product = acosh(product)
+
+            #Raising product to power n
+            elif operator3 == "^":
+                product = product ** third_entry
+
+            #Square root of product
+            elif operator3 == "rt":
+                product = sqrt(product)
+
+            #Multiplying product by pi
+            elif operator3 == "pi":
+                product = product * pi
+
+            #Finding modulus of product
+            elif operator3 == "%":
+                product = product % third_entry
+
+            #Terminate the loop
+            #returns the answer
+            elif operator3 == "=":
+                print(f"= {product}")
+
     print(f"\n= {product}")
     quit()
 
 #Tan operation
 elif operator == "tan":
     product = tan(first_entry)
+
+    #Continuing with operation
+    continue_operation = True
+    other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+    #If one wishes to continue with operations
+    if other_operation == "y":
+
+        #Operations continue in a loop unless terminated
+        while continue_operation:
+
+            operator3 = input("\nType an operation type ").lower()
+
+            third_entry = float(input("\nEnter number "))
+
+            #Multiplying
+            if operator3 == "x":
+                product = product * third_entry
+
+            #Dividing
+            elif operator3 == "/":
+                product = product / third_entry
+
+            #Adding
+            elif operator3 == "+":
+                product = product + third_entry
+
+            #Subtracting
+            elif operator3 == "-":
+                product = product - third_entry
+
+            #Log operation
+            elif operator3 == "log":
+                product = log(product)
+
+            #Exponential operation
+            elif operator3 == "e":
+                product = exp(product)
+
+            #Sin operation
+            elif operator3 == "sin":
+                product = cosh(product)
+
+            #Cosine operation
+            elif operator3 == "cos":
+                product = cos(product)
+
+            #Coshine operation
+            elif operator3 == "cosh":
+                product = cosh(product)
+
+            #Tan operation
+            elif operator3 == "tan":
+                product = tan(product)
+
+            #Sin inverse
+            elif operator3 == "sin-1":
+                product = asin(product)
+
+            #Cos inverse
+            elif operator3 == "cos-1":
+                product = acos(product)
+
+            #Cosh inverse
+            elif operator3 == "cosh-1":
+                product = acosh(product)
+
+            #Raising product to power n
+            elif operator3 == "^":
+                product = product ** third_entry
+
+            #Square root of product
+            elif operator3 == "rt":
+                product = sqrt(product)
+
+            #Multiplying product by pi
+            elif operator3 == "pi":
+                product = product * pi
+
+            #Finding modulus of product
+            elif operator3 == "%":
+                product = product % third_entry
+
+            #Terminate the loop
+            #returns the answer
+            elif operator3 == "=":
+                print(f"= {product}")
+
     print(f"\n= {product}")
     quit()
 
 #Tan inverse
 elif operator == "tan-1":
     product = atan(first_entry)
+
+    #Continuing with operation
+    continue_operation = True
+    other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+    #If one wishes to continue with operations
+    if other_operation == "y":
+
+        #Operations continue in a loop unless terminated
+        while continue_operation:
+
+            operator3 = input("\nType an operation type ").lower()
+
+            third_entry = float(input("\nEnter number "))
+
+            #Multiplying
+            if operator3 == "x":
+                product = product * third_entry
+
+            #Dividing
+            elif operator3 == "/":
+                product = product / third_entry
+
+            #Adding
+            elif operator3 == "+":
+                product = product + third_entry
+
+            #Subtracting
+            elif operator3 == "-":
+                product = product - third_entry
+
+            #Log operation
+            elif operator3 == "log":
+                product = log(product)
+
+            #Exponential operation
+            elif operator3 == "e":
+                product = exp(product)
+
+            #Sin operation
+            elif operator3 == "sin":
+                product = cosh(product)
+
+            #Cosine operation
+            elif operator3 == "cos":
+                product = cos(product)
+
+            #Coshine operation
+            elif operator3 == "cosh":
+                product = cosh(product)
+
+            #Tan operation
+            elif operator3 == "tan":
+                product = tan(product)
+
+            #Sin inverse
+            elif operator3 == "sin-1":
+                product = asin(product)
+
+            #Cos inverse
+            elif operator3 == "cos-1":
+                product = acos(product)
+
+            #Cosh inverse
+            elif operator3 == "cosh-1":
+                product = acosh(product)
+
+            #Raising product to power n
+            elif operator3 == "^":
+                product = product ** third_entry
+
+            #Square root of product
+            elif operator3 == "rt":
+                product = sqrt(product)
+
+            #Multiplying product by pi
+            elif operator3 == "pi":
+                product = product * pi
+
+            #Finding modulus of product
+            elif operator3 == "%":
+                product = product % third_entry
+
+            #Terminate the loop
+            #returns the answer
+            elif operator3 == "=":
+                print(f"= {product}")
+
     print(f"\n= {product}")
     quit()
 
 #Cosh operation
 elif operator == "cosh":
     product = cosh(first_entry)
+
+    #Continuing with operation
+    continue_operation = True
+    other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+    #If one wishes to continue with operations
+    if other_operation == "y":
+
+        #Operations continue in a loop unless terminated
+        while continue_operation:
+
+            operator3 = input("\nType an operation type ").lower()
+
+            third_entry = float(input("\nEnter number "))
+
+            #Multiplying
+            if operator3 == "x":
+                product = product * third_entry
+
+            #Dividing
+            elif operator3 == "/":
+                product = product / third_entry
+
+            #Adding
+            elif operator3 == "+":
+                product = product + third_entry
+
+            #Subtracting
+            elif operator3 == "-":
+                product = product - third_entry
+
+            #Log operation
+            elif operator3 == "log":
+                product = log(product)
+
+            #Exponential operation
+            elif operator3 == "e":
+                product = exp(product)
+
+            #Sin operation
+            elif operator3 == "sin":
+                product = cosh(product)
+
+            #Cosine operation
+            elif operator3 == "cos":
+                product = cos(product)
+
+            #Coshine operation
+            elif operator3 == "cosh":
+                product = cosh(product)
+
+            #Tan operation
+            elif operator3 == "tan":
+                product = tan(product)
+
+            #Sin inverse
+            elif operator3 == "sin-1":
+                product = asin(product)
+
+            #Cos inverse
+            elif operator3 == "cos-1":
+                product = acos(product)
+
+            #Cosh inverse
+            elif operator3 == "cosh-1":
+                product = acosh(product)
+
+            #Raising product to power n
+            elif operator3 == "^":
+                product = product ** third_entry
+
+            #Square root of product
+            elif operator3 == "rt":
+                product = sqrt(product)
+
+            #Multiplying product by pi
+            elif operator3 == "pi":
+                product = product * pi
+
+            #Finding modulus of product
+            elif operator3 == "%":
+                product = product % third_entry
+
+            #Terminate the loop
+            #returns the answer
+            elif operator3 == "=":
+                print(f"= {product}")
+
     print(f"\n= {product}")
     quit()
 
 #Cosh inverse
 elif operator == "cosh-1":
     product = acosh(first_entry)
+
+    #Continuing with operation
+    continue_operation = True
+    other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+    #If one wishes to continue with operations
+    if other_operation == "y":
+
+        #Operations continue in a loop unless terminated
+        while continue_operation:
+
+            operator3 = input("\nType an operation type ").lower()
+
+            third_entry = float(input("\nEnter number "))
+
+            #Multiplying
+            if operator3 == "x":
+                product = product * third_entry
+
+            #Dividing
+            elif operator3 == "/":
+                product = product / third_entry
+
+            #Adding
+            elif operator3 == "+":
+                product = product + third_entry
+
+            #Subtracting
+            elif operator3 == "-":
+                product = product - third_entry
+
+            #Log operation
+            elif operator3 == "log":
+                product = log(product)
+
+            #Exponential operation
+            elif operator3 == "e":
+                product = exp(product)
+
+            #Sin operation
+            elif operator3 == "sin":
+                product = cosh(product)
+
+            #Cosine operation
+            elif operator3 == "cos":
+                product = cos(product)
+
+            #Coshine operation
+            elif operator3 == "cosh":
+                product = cosh(product)
+
+            #Tan operation
+            elif operator3 == "tan":
+                product = tan(product)
+
+            #Sin inverse
+            elif operator3 == "sin-1":
+                product = asin(product)
+
+            #Cos inverse
+            elif operator3 == "cos-1":
+                product = acos(product)
+
+            #Cosh inverse
+            elif operator3 == "cosh-1":
+                product = acosh(product)
+
+            #Raising product to power n
+            elif operator3 == "^":
+                product = product ** third_entry
+
+            #Square root of product
+            elif operator3 == "rt":
+                product = sqrt(product)
+
+            #Multiplying product by pi
+            elif operator3 == "pi":
+                product = product * pi
+
+            #Finding modulus of product
+            elif operator3 == "%":
+                product = product % third_entry
+
+            #Terminate the loop
+            #returns the answer
+            elif operator3 == "=":
+                print(f"= {product}")
+
     print(f"\n= {product}")
     quit()
 
 #Pi operation
 elif operator == "pi":
     product = pi(first_entry)
+
+    #Continuing with operation
+    continue_operation = True
+    other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+    #If one wishes to continue with operations
+    if other_operation == "y":
+
+        #Operations continue in a loop unless terminated
+        while continue_operation:
+
+            operator3 = input("\nType an operation type ").lower()
+
+            third_entry = float(input("\nEnter number "))
+
+            #Multiplying
+            if operator3 == "x":
+                product = product * third_entry
+
+            #Dividing
+            elif operator3 == "/":
+                product = product / third_entry
+
+            #Adding
+            elif operator3 == "+":
+                product = product + third_entry
+
+            #Subtracting
+            elif operator3 == "-":
+                product = product - third_entry
+
+            #Log operation
+            elif operator3 == "log":
+                product = log(product)
+
+            #Exponential operation
+            elif operator3 == "e":
+                product = exp(product)
+
+            #Sin operation
+            elif operator3 == "sin":
+                product = cosh(product)
+
+            #Cosine operation
+            elif operator3 == "cos":
+                product = cos(product)
+
+            #Coshine operation
+            elif operator3 == "cosh":
+                product = cosh(product)
+
+            #Tan operation
+            elif operator3 == "tan":
+                product = tan(product)
+
+            #Sin inverse
+            elif operator3 == "sin-1":
+                product = asin(product)
+
+            #Cos inverse
+            elif operator3 == "cos-1":
+                product = acos(product)
+
+            #Cosh inverse
+            elif operator3 == "cosh-1":
+                product = acosh(product)
+
+            #Raising product to power n
+            elif operator3 == "^":
+                product = product ** third_entry
+
+            #Square root of product
+            elif operator3 == "rt":
+                product = sqrt(product)
+
+            #Multiplying product by pi
+            elif operator3 == "pi":
+                product = product * pi
+
+            #Finding modulus of product
+            elif operator3 == "%":
+                product = product % third_entry
+
+            #Terminate the loop
+            #returns the answer
+            elif operator3 == "=":
+                print(f"= {product}")
+
     print(f"\n= {product}")
     quit()
 
 #Log to base 10
 elif operator == "log":
     product = log10(first_entry)
+
+    #Continuing with operation
+    continue_operation = True
+    other_operation = input("\nDo you want to continue with operation? Y or N ").lower()
+
+    #If one wishes to continue with operations
+    if other_operation == "y":
+
+        #Operations continue in a loop unless terminated
+        while continue_operation:
+
+            operator3 = input("\nType an operation type ").lower()
+
+            third_entry = float(input("\nEnter number "))
+
+            #Multiplying
+            if operator3 == "x":
+                product = product * third_entry
+
+            #Dividing
+            elif operator3 == "/":
+                product = product / third_entry
+
+            #Adding
+            elif operator3 == "+":
+                product = product + third_entry
+
+            #Subtracting
+            elif operator3 == "-":
+                product = product - third_entry
+
+            #Log operation
+            elif operator3 == "log":
+                product = log(product)
+
+            #Exponential operation
+            elif operator3 == "e":
+                product = exp(product)
+
+            #Sin operation
+            elif operator3 == "sin":
+                product = cosh(product)
+
+            #Cosine operation
+            elif operator3 == "cos":
+                product = cos(product)
+
+            #Coshine operation
+            elif operator3 == "cosh":
+                product = cosh(product)
+
+            #Tan operation
+            elif operator3 == "tan":
+                product = tan(product)
+
+            #Sin inverse
+            elif operator3 == "sin-1":
+                product = asin(product)
+
+            #Cos inverse
+            elif operator3 == "cos-1":
+                product = acos(product)
+
+            #Cosh inverse
+            elif operator3 == "cosh-1":
+                product = acosh(product)
+
+            #Raising product to power n
+            elif operator3 == "^":
+                product = product ** third_entry
+
+            #Square root of product
+            elif operator3 == "rt":
+                product = sqrt(product)
+
+            #Multiplying product by pi
+            elif operator3 == "pi":
+                product = product * pi
+
+            #Finding modulus of product
+            elif operator3 == "%":
+                product = product % third_entry
+
+            #Terminate the loop
+            #returns the answer
+            elif operator3 == "=":
+                print(f"= {product}")
+
     print(f"\n= {product}")
     quit()
 
-second_entry = int(input("\nEnter the second number"))
-
+second_entry = float(input("\nEnter the second number "))
 
 print(f" = {calculator(operator,first_entry, second_entry)}")
