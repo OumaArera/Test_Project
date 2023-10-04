@@ -24,6 +24,8 @@ def calculator(symbol,entry1, entry2):
     Calculator takes the two entries and work out the operation
     '''
 
+    product = 0
+
     if symbol == "x":
         product = entry1 * entry2
 
@@ -35,9 +37,16 @@ def calculator(symbol,entry1, entry2):
         if other_operation == "y":
 
             #Operations continue in a loop unless terminated
-            while continue_operation:
+            while True:
 
                 operator3 = input("\nType an operation type ").lower()
+
+                # Terminate the loop
+                # returns the answer
+                if operator3 == "=":
+                    # continue_operation = False
+                    print(f"\n= {product}")
+                    quit()
 
                 third_entry = float(input("\nEnter number "))
 
@@ -108,11 +117,6 @@ def calculator(symbol,entry1, entry2):
                 #Finding modulus of product
                 elif operator3 == "%":
                     product = product % third_entry
-
-                # Terminate the loop
-                # returns the answer
-                elif operator3 == "=":
-                    print(f"= {product}")
 
 
         return product
@@ -133,6 +137,13 @@ def calculator(symbol,entry1, entry2):
 
                 operator3 = input("\nType an operation type ").lower()
 
+                # Terminate the loop
+                # returns the answer
+                if operator3 == "=":
+                    # continue_operation = False
+                    print(f"\n= {product}")
+                    quit()
+
                 third_entry = float(input("\nEnter number "))
 
                 #Multiplying
@@ -203,10 +214,6 @@ def calculator(symbol,entry1, entry2):
                 elif operator3 == "%":
                     product = product % third_entry
 
-                #Terminate the loop
-                #returns the answer
-                elif operator3 == "=":
-                    print(f"= {product}")
 
         return product
 
@@ -225,6 +232,13 @@ def calculator(symbol,entry1, entry2):
             while continue_operation:
 
                 operator3 = input("\nType an operation type ").lower()
+
+                # Terminate the loop
+                # returns the answer
+                if operator3 == "=":
+                    # continue_operation = False
+                    print(f"\n= {product}")
+                    quit()
 
                 third_entry = float(input("\nEnter number "))
 
@@ -319,6 +333,13 @@ def calculator(symbol,entry1, entry2):
 
                 operator3 = input("\nType an operation type ").lower()
 
+                # Terminate the loop
+                # returns the answer
+                if operator3 == "=":
+                    # continue_operation = False
+                    print(f"\n= {product}")
+                    quit()
+
                 third_entry = float(input("\nEnter number "))
 
                 #Multiplying
@@ -388,11 +409,6 @@ def calculator(symbol,entry1, entry2):
                 #Finding modulus of product
                 elif operator3 == "%":
                     product = product % third_entry
-
-                #Terminate the loop
-                #returns the answer
-                elif operator3 == "=":
-                    print(f"= {product}")
 
         return product
 
@@ -412,6 +428,13 @@ def calculator(symbol,entry1, entry2):
 
                 operator3 = input("\nType an operation type ").lower()
 
+                # Terminate the loop
+                # returns the answer
+                if operator3 == "=":
+                    # continue_operation = False
+                    print(f"\n= {product}")
+                    quit()
+
                 third_entry = float(input("\nEnter number "))
 
                 #Multiplying
@@ -481,11 +504,6 @@ def calculator(symbol,entry1, entry2):
                 #Finding modulus of product
                 elif operator3 == "%":
                     product = product % third_entry
-
-                #Terminate the loop
-                #returns the answer
-                elif operator3 == "=":
-                    print(f"= {product}")
 
         return product
 
@@ -505,6 +523,13 @@ def calculator(symbol,entry1, entry2):
 
                 operator3 = input("\nType an operation type ").lower()
 
+                # Terminate the loop
+                # returns the answer
+                if operator3 == "=":
+                    # continue_operation = False
+                    print(f"\n= {product}")
+                    quit()
+
                 third_entry = float(input("\nEnter number "))
 
                 #Multiplying
@@ -574,11 +599,6 @@ def calculator(symbol,entry1, entry2):
                 #Finding modulus of product
                 elif operator3 == "%":
                     product = product % third_entry
-
-                #Terminate the loop
-                #returns the answer
-                elif operator3 == "=":
-                    print(f"= {product}")
 
         return product
 
@@ -598,6 +618,13 @@ def calculator(symbol,entry1, entry2):
 
                 operator3 = input("\nType an operation type ").lower()
 
+                # Terminate the loop
+                # returns the answer
+                if operator3 == "=":
+                    # continue_operation = False
+                    print(f"\n= {product}")
+                    quit()
+
                 third_entry = float(input("\nEnter number "))
 
                 #Multiplying
@@ -667,11 +694,6 @@ def calculator(symbol,entry1, entry2):
                 #Finding modulus of product
                 elif operator3 == "%":
                     product = product % third_entry
-
-                #Terminate the loop
-                #returns the answer
-                elif operator3 == "=":
-                    print(f"= {product}")
 
         return product
 
@@ -691,6 +713,13 @@ def calculator(symbol,entry1, entry2):
 
                 operator3 = input("\nType an operation type ").lower()
 
+                # Terminate the loop
+                # returns the answer
+                if operator3 == "=":
+                    # continue_operation = False
+                    print(f"\n= {product}")
+                    quit()
+
                 third_entry = float(input("\nEnter number "))
 
                 #Multiplying
@@ -760,11 +789,6 @@ def calculator(symbol,entry1, entry2):
                 #Finding modulus of product
                 elif operator3 == "%":
                     product = product % third_entry
-
-                #Terminate the loop
-                #returns the answer
-                elif operator3 == "=":
-                    print(f"= {product}")
 
         return product
 
@@ -791,6 +815,13 @@ if operator == "rt":
 
             operator3 = input("\nType an operation type ").lower()
 
+            # Terminate the loop
+            # returns the answer
+            if operator3 == "=":
+                # continue_operation = False
+                print(f"\n= {product}")
+                quit()
+
             third_entry = float(input("\nEnter number "))
 
             #Multiplying
@@ -861,10 +892,6 @@ if operator == "rt":
             elif operator3 == "%":
                 product = product % third_entry
 
-            #Terminate the loop
-            #returns the answer
-            elif operator3 == "=":
-                print(f"= {product}")
 
     print(f"\n= {product}")
     quit()
@@ -885,6 +912,13 @@ elif operator == "!":
 
             operator3 = input("\nType an operation type ").lower()
 
+            # Terminate the loop
+            # returns the answer
+            if operator3 == "=":
+                # continue_operation = False
+                print(f"\n= {product}")
+                quit()
+
             third_entry = float(input("\nEnter number "))
 
             #Multiplying
@@ -955,10 +989,6 @@ elif operator == "!":
             elif operator3 == "%":
                 product = product % third_entry
 
-            #Terminate the loop
-            #returns the answer
-            elif operator3 == "=":
-                print(f"= {product}")
 
     print(f"\n= {product}")
     quit()
@@ -979,6 +1009,13 @@ elif operator == "e":
 
             operator3 = input("\nType an operation type ").lower()
 
+            # Terminate the loop
+            # returns the answer
+            if operator3 == "=":
+                # continue_operation = False
+                print(f"\n= {product}")
+                quit()
+
             third_entry = float(input("\nEnter number "))
 
             #Multiplying
@@ -1049,10 +1086,6 @@ elif operator == "e":
             elif operator3 == "%":
                 product = product % third_entry
 
-            #Terminate the loop
-            #returns the answer
-            elif operator3 == "=":
-                print(f"= {product}")
 
     print(f"\n= {product}")
     quit()
@@ -1073,6 +1106,13 @@ elif operator == "sin":
 
             operator3 = input("\nType an operation type ").lower()
 
+            # Terminate the loop
+            # returns the answer
+            if operator3 == "=":
+                # continue_operation = False
+                print(f"\n= {product}")
+                quit()
+
             third_entry = float(input("\nEnter number "))
 
             #Multiplying
@@ -1142,11 +1182,6 @@ elif operator == "sin":
             #Finding modulus of product
             elif operator3 == "%":
                 product = product % third_entry
-
-            #Terminate the loop
-            #returns the answer
-            elif operator3 == "=":
-                print(f"= {product}")
 
     print(f"\n= {product}")
     quit()
@@ -1167,6 +1202,13 @@ elif operator == "sin-1":
 
             operator3 = input("\nType an operation type ").lower()
 
+            # Terminate the loop
+            # returns the answer
+            if operator3 == "=":
+                # continue_operation = False
+                print(f"\n= {product}")
+                quit()
+
             third_entry = float(input("\nEnter number "))
 
             #Multiplying
@@ -1236,11 +1278,6 @@ elif operator == "sin-1":
             #Finding modulus of product
             elif operator3 == "%":
                 product = product % third_entry
-
-            #Terminate the loop
-            #returns the answer
-            elif operator3 == "=":
-                print(f"= {product}")
 
     print(f"\n= {product}")
     quit()
@@ -1261,6 +1298,13 @@ elif operator == "cos":
 
             operator3 = input("\nType an operation type ").lower()
 
+            # Terminate the loop
+            # returns the answer
+            if operator3 == "=":
+                # continue_operation = False
+                print(f"\n= {product}")
+                quit()
+
             third_entry = float(input("\nEnter number "))
 
             #Multiplying
@@ -1330,11 +1374,6 @@ elif operator == "cos":
             #Finding modulus of product
             elif operator3 == "%":
                 product = product % third_entry
-
-            #Terminate the loop
-            #returns the answer
-            elif operator3 == "=":
-                print(f"= {product}")
 
     print(f"\n= {product}")
     quit()
@@ -1355,6 +1394,13 @@ elif operator == "cos-1":
 
             operator3 = input("\nType an operation type ").lower()
 
+            # Terminate the loop
+            # returns the answer
+            if operator3 == "=":
+                # continue_operation = False
+                print(f"\n= {product}")
+                quit()
+
             third_entry = float(input("\nEnter number "))
 
             #Multiplying
@@ -1424,11 +1470,6 @@ elif operator == "cos-1":
             #Finding modulus of product
             elif operator3 == "%":
                 product = product % third_entry
-
-            #Terminate the loop
-            #returns the answer
-            elif operator3 == "=":
-                print(f"= {product}")
 
     print(f"\n= {product}")
     quit()
@@ -1449,6 +1490,13 @@ elif operator == "tan":
 
             operator3 = input("\nType an operation type ").lower()
 
+            # Terminate the loop
+            # returns the answer
+            if operator3 == "=":
+                # continue_operation = False
+                print(f"\n= {product}")
+                quit()
+
             third_entry = float(input("\nEnter number "))
 
             #Multiplying
@@ -1518,11 +1566,6 @@ elif operator == "tan":
             #Finding modulus of product
             elif operator3 == "%":
                 product = product % third_entry
-
-            #Terminate the loop
-            #returns the answer
-            elif operator3 == "=":
-                print(f"= {product}")
 
     print(f"\n= {product}")
     quit()
@@ -1543,6 +1586,13 @@ elif operator == "tan-1":
 
             operator3 = input("\nType an operation type ").lower()
 
+            # Terminate the loop
+            # returns the answer
+            if operator3 == "=":
+                # continue_operation = False
+                print(f"\n= {product}")
+                quit()
+
             third_entry = float(input("\nEnter number "))
 
             #Multiplying
@@ -1612,11 +1662,6 @@ elif operator == "tan-1":
             #Finding modulus of product
             elif operator3 == "%":
                 product = product % third_entry
-
-            #Terminate the loop
-            #returns the answer
-            elif operator3 == "=":
-                print(f"= {product}")
 
     print(f"\n= {product}")
     quit()
@@ -1637,6 +1682,13 @@ elif operator == "cosh":
 
             operator3 = input("\nType an operation type ").lower()
 
+            # Terminate the loop
+            # returns the answer
+            if operator3 == "=":
+                # continue_operation = False
+                print(f"\n= {product}")
+                quit()
+
             third_entry = float(input("\nEnter number "))
 
             #Multiplying
@@ -1706,11 +1758,6 @@ elif operator == "cosh":
             #Finding modulus of product
             elif operator3 == "%":
                 product = product % third_entry
-
-            #Terminate the loop
-            #returns the answer
-            elif operator3 == "=":
-                print(f"= {product}")
 
     print(f"\n= {product}")
     quit()
@@ -1731,6 +1778,13 @@ elif operator == "cosh-1":
 
             operator3 = input("\nType an operation type ").lower()
 
+            # Terminate the loop
+            # returns the answer
+            if operator3 == "=":
+                # continue_operation = False
+                print(f"\n= {product}")
+                quit()
+
             third_entry = float(input("\nEnter number "))
 
             #Multiplying
@@ -1800,11 +1854,6 @@ elif operator == "cosh-1":
             #Finding modulus of product
             elif operator3 == "%":
                 product = product % third_entry
-
-            #Terminate the loop
-            #returns the answer
-            elif operator3 == "=":
-                print(f"= {product}")
 
     print(f"\n= {product}")
     quit()
@@ -1825,6 +1874,13 @@ elif operator == "pi":
 
             operator3 = input("\nType an operation type ").lower()
 
+            # Terminate the loop
+            # returns the answer
+            if operator3 == "=":
+                # continue_operation = False
+                print(f"\n= {product}")
+                quit()
+
             third_entry = float(input("\nEnter number "))
 
             #Multiplying
@@ -1894,11 +1950,6 @@ elif operator == "pi":
             #Finding modulus of product
             elif operator3 == "%":
                 product = product % third_entry
-
-            #Terminate the loop
-            #returns the answer
-            elif operator3 == "=":
-                print(f"= {product}")
 
     print(f"\n= {product}")
     quit()
@@ -1919,6 +1970,13 @@ elif operator == "log":
 
             operator3 = input("\nType an operation type ").lower()
 
+            # Terminate the loop
+            # returns the answer
+            if operator3 == "=":
+                # continue_operation = False
+                print(f"\n= {product}")
+                quit()
+
             third_entry = float(input("\nEnter number "))
 
             #Multiplying
@@ -1989,14 +2047,10 @@ elif operator == "log":
             elif operator3 == "%":
                 product = product % third_entry
 
-            #Terminate the loop
-            #returns the answer
-            elif operator3 == "=":
-                print(f"= {product}")
 
     print(f"\n= {product}")
     quit()
 
 second_entry = float(input("\nEnter the second number "))
 
-print(f" = {calculator(operator,first_entry, second_entry)}")
+print(f"\n= {calculator(operator,first_entry, second_entry)}")
