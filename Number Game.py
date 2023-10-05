@@ -102,6 +102,9 @@ if game_level == "easy":
 #2. You only have 5 guesses to make
 ##. The winner gets three times their bid
 elif game_level == "hard":
+
+    print("\nYou got 5 attempts to play!")
+
     starting_number = int(input("\nEnter the lower limit: "))
 
     ending_number = int(input("\nEnter the upper limit: "))
@@ -158,6 +161,8 @@ elif game_level == "hard":
 #2. You only have 3 guesses to make
 ##. The winner gets three and half times their bid
 elif game_level == "expert":
+
+    print("\nYou got 3 attempts to play!")
 
     starting_number = int(input("\nEnter the lower limit: "))
 
