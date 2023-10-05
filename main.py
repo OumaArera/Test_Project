@@ -1,7 +1,7 @@
 from random import shuffle
 
 
-def blck_jack():
+def black_jack():
     cards = [
         11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10,
         11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10,
@@ -244,6 +244,6 @@ def blck_jack():
     print(f"\nSum of dealer cards =  is {sum_of_dealer}")
 
 
-blck_jack()
+black_jack()
 
 
