@@ -76,6 +76,7 @@ while sum_of_player < 21:
         new_card = remain_cards.pop()
         player_cards.append(new_card)
         sum_of_player += new_card
+        print(f"\nYour cards = {player_cards}")
 
         if sum_of_player == 21:
             print(f"\nPlayer cards = {player_cards}")
@@ -103,7 +104,7 @@ while sum_of_player < 21:
 
         elif sum_of_player > 21 and 11 in player_cards and (sum_of_player - 10) < 21:
             still_playing =True
-            play_on = input("Do you want to play? Hit or Stay: ").lower()
+            play_on = input("\nDo you want to play? Hit or Stay: ").lower()
 
 
     if play_on == "stay":
@@ -147,12 +148,11 @@ while sum_of_player > 21 and 11 in player_cards and (sum_of_player - 10) < 21 :
 
     play_on = input("\nDo you want to play? Hit or Stay: ").lower()
 
-
-
     if play_on == "hit":
         new_card = remain_cards.pop()
         player_cards.append(new_card)
         sum_of_player += new_card
+        print(f"\nYour cards = {player_cards}")
 
         if sum_of_player == 21:
             print(f"\nPlayer cards = {player_cards}")
@@ -179,7 +179,7 @@ while sum_of_player > 21 and 11 in player_cards and (sum_of_player - 10) < 21 :
             quit()
 
         elif sum_of_player > 21 and 11 in player_cards and (sum_of_player - 10) < 21:
-            game_on = True
+            play_on = input("\nDo you want to play? Hit or Stay: ").lower()
 
 
     if play_on == "stay":
