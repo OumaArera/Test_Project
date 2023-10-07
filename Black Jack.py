@@ -83,13 +83,13 @@ def black_jack():
             if sum_of_player == 21:
                 print(f"\nPlayer cards = {player_cards}")
                 print(f"\nDealer cards = {dealer_cards}")
-                print("\nBlack Jack! Player win!")
+                print("\nPlayer win!")
                 quit()
 
             elif sum_of_dealer == 21:
                 print(f"\nPlayer cards = {player_cards}")
                 print(f"\nDealer cards = {dealer_cards}")
-                print("\nBlack Jack! Player lose!")
+                print("\nPlayer lose!")
                 quit()
 
             elif sum_of_player > 21 and 11 in player_cards and (sum_of_player - 10) > 21:
@@ -105,53 +105,11 @@ def black_jack():
                 quit()
 
             elif sum_of_player > 21 and 11 in player_cards and (sum_of_player - 10) < 21:
-                play_on = input("\nDo you want to play? Hit or Stay: ").lower()
-                if play_on == "hit":
-                    new_card = remain_cards.pop()
-                    player_cards.append(new_card)
-                    sum_of_player += new_card
-                    print(f"\nPlayer cards = {player_cards}")
+                print("\nYou can choose to hit or stay")
 
-                elif play_on == "stay":
-                    new_card = remain_cards.pop()
-                    dealer_cards.append(new_card)
-                    sum_of_dealer += new_card
-
-                    while sum_of_dealer < 17:
-                        new_card = remain_cards.pop()
-                        dealer_cards.append(new_card)
-                        sum_of_dealer += new_card
-
-                    if sum_of_dealer > 21:
-                        print(f"\nPlayer cards = {player_cards}")
-                        print(f"\nDealer cards = {dealer_cards}")
-                        print("\nBUST! Player win!")
-                        quit()
-
-                    elif sum_of_dealer > 17 and sum_of_dealer <= 21 and sum_of_dealer > sum_of_player:
-                        print(f"\nPlayer cards = {player_cards}")
-                        print(f"\nDealer cards = {dealer_cards}")
-                        print("\nPlayer lose!")
-                        quit()
-
-                    elif sum_of_dealer > 17 and sum_of_dealer <= 21 and sum_of_dealer < sum_of_player:
-                        print(f"\nPlayer cards = {player_cards}")
-                        print(f"\nDealer cards = {dealer_cards}")
-                        print("\nPlayer win!")
-                        quit()
-
-                    elif sum_of_dealer > 17 and sum_of_dealer <= 21 and sum_of_dealer == sum_of_player:
-                        print(f"\nPlayer cards = {player_cards}")
-                        print(f"\nDealer cards = {dealer_cards}")
-                        print("Draw!")
-                        quit()
 
 
         if play_on == "stay":
-
-            new_card = remain_cards.pop()
-            dealer_cards.append(new_card)
-            sum_of_dealer += new_card
 
 
             while sum_of_dealer < 17:
@@ -191,19 +149,30 @@ def black_jack():
         if play_on == "hit":
             new_card = remain_cards.pop()
             player_cards.append(new_card)
-            sum_of_player += new_card
+            if new_card == 11 and (sum_of_player - 11) > 10 :
+                sum_of_player += 1
+                if sum_of_player > 21:
+                    print("BUST! Player lose!")
+
+            elif new_card == 11 and (sum_of_player - 11) <= 10:
+                sum_of_player += 11
+                if sum_of_player > 21:
+                    print("BUST! Player lose!")
+                    quit()
+
+            player_cards.append(new_card)
             print(f"\nYour cards = {player_cards}")
 
             if sum_of_player == 21:
                 print(f"\nPlayer cards = {player_cards}")
                 print(f"\nDealer cards = {dealer_cards}")
-                print("\nBlack Jack! Player win!")
+                print("\nPlayer win!")
                 quit()
 
             elif sum_of_dealer == 21:
                 print(f"\nPlayer cards = {player_cards}")
                 print(f"\nDealer cards = {dealer_cards}")
-                print("\nBlack Jack! Player lose!")
+                print("\nPlayer lose!")
                 quit()
 
             elif sum_of_player > 21 and 11 in player_cards and (sum_of_player - 10) > 21:
@@ -219,55 +188,10 @@ def black_jack():
                 quit()
 
             elif sum_of_player > 21 and 11 in player_cards and (sum_of_player - 10) < 21:
-
-                play_on = input("\nDo you want to play? Hit or Stay: ").lower()
-                if play_on == "hit":
-                    new_card = remain_cards.pop()
-                    player_cards.append(new_card)
-                    sum_of_player += new_card
-                    print(f"\nPlayer cards = {player_cards}")
-
-                elif play_on == "stay":
-                    new_card = remain_cards.pop()
-                    dealer_cards.append(new_card)
-                    sum_of_dealer += new_card
-
-                    while sum_of_dealer < 17:
-                        new_card = remain_cards.pop()
-                        dealer_cards.append(new_card)
-                        sum_of_dealer += new_card
-
-                    if sum_of_dealer > 21:
-                        print(f"\nPlayer cards = {player_cards}")
-                        print(f"\nDealer cards = {dealer_cards}")
-                        print("\nBUST! Player win!")
-                        quit()
-
-                    elif sum_of_dealer > 17 and sum_of_dealer <= 21 and sum_of_dealer > sum_of_player:
-                        print(f"\nPlayer cards = {player_cards}")
-                        print(f"\nDealer cards = {dealer_cards}")
-                        print("\nPlayer lose!")
-                        quit()
-
-                    elif sum_of_dealer > 17 and sum_of_dealer <= 21 and sum_of_dealer < sum_of_player:
-                        print(f"\nPlayer cards = {player_cards}")
-                        print(f"\nDealer cards = {dealer_cards}")
-                        print("\nPlayer win!")
-                        quit()
-
-                    elif sum_of_dealer > 17 and sum_of_dealer <= 21 and sum_of_dealer == sum_of_player:
-                        print(f"\nPlayer cards = {player_cards}")
-                        print(f"\nDealer cards = {dealer_cards}")
-                        print("Draw!")
-                        quit()
+                print("\nYou can choose to hit or stay!")
 
 
         if play_on == "stay":
-
-            new_card = remain_cards.pop()
-            dealer_cards.append(new_card)
-            sum_of_dealer += new_card
-
 
             while sum_of_dealer < 17:
                 new_card = remain_cards.pop()

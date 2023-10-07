@@ -12,6 +12,7 @@ def black_jack():
 
     shuffle(cards)
 
+
     shuffled_cards = cards
 
     print(f"Cards after shuffling.\n{shuffled_cards}")
@@ -45,6 +46,7 @@ def black_jack():
 
 
     if sum_of_player == 21:
+
         print(f"\nPlayer cards = {player_cards}")
         print(f"\nDealer cards = {dealer_cards}")
         print("\nBlack Jack! Player win!")
@@ -247,3 +249,6 @@ def black_jack():
 black_jack()
 
 
+print(jane
+print(achienf
+print(ochieng
