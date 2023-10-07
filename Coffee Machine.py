@@ -64,7 +64,7 @@ while making_coffee:
                 change = round((total -1.5), 2)
 
                 #Print receipt
-                print(f"\nRECEIPT\n\nBill = ${total}\n\nChange = ${change}\n\nTOTAL = ${round((total - change), 2)}\n\nWelcome again!")
+                print(f"\nRECEIPT\n\nReceived = ${total}\n\nChange = ${change}\n\nTOTAL = ${round((total - change), 2)}\n\nWelcome again!")
 
                 #Add cash from user to our cash counter
                 cash += total
@@ -82,7 +82,7 @@ while making_coffee:
                 change = round((total - 1.50), 2)
 
                 #print receipt
-                print(f"\nRECEIPT\n\nBill = ${total}\n\nChange = ${change}\n\nTOTAL = ${round((total - change), 2)}\n\nWelcome again!")
+                print(f"\nRECEIPT\n\nReceived = ${total}\n\nChange = ${change}\n\nTOTAL = ${round((total - change), 2)}\n\nWelcome again!")
 
                 #Add cash to our cashh counter
                 cash += 1.5
@@ -130,7 +130,7 @@ while making_coffee:
                 change = round((total - 2.50), 2)
 
                 #Print receipt
-                print(f"\nRECEIPT\n\nBill = ${total}\n\nChange = ${change}\n\nTOTAL = ${round((total - change), 2)}\n\nWelcome again!")
+                print(f"\nRECEIPT\n\nReceived = ${total}\n\nChange = ${change}\n\nTOTAL = ${round((total - change), 2)}\n\nWelcome again!")
 
                 #We add cash to our cash counter
                 cash += total
@@ -149,7 +149,7 @@ while making_coffee:
                 change =round ((total - 2.50), 2)
 
                 #Print Receipt
-                print(f"\nRECEIPT\n\nBill = ${total}\n\nChange = ${change}\n\nTOTAL = ${round((total - change), 2)}\n\nWelcome again!")
+                print(f"\nRECEIPT\n\nReceived = ${total}\n\nChange = ${change}\n\nTOTAL = ${round((total - change), 2)}\n\nWelcome again!")
 
                 #Add cash to our cash counter
                 cash += 2.5
@@ -206,7 +206,7 @@ while making_coffee:
                 change = round((total - 3.00), 2)
 
                 #Print receipt
-                print(f"\nRECEIPT\n\nBill = ${total}\n\nChange = ${change}\n\nTOTAL = ${round((total - change), 2)}\n\nWelcome again!")
+                print(f"\nRECEIPT\n\nReceived = ${total}\n\nChange = ${change}\n\nTOTAL = ${round((total - change), 2)}\n\nWelcome again!")
 
                 #Add cash to our cash count
                 cash += total
@@ -225,7 +225,7 @@ while making_coffee:
                 change = round((total - 3.00), 2)
 
                 #Print receipt
-                print(f"\nRECEIPT\n\nBill = ${total}\n\nChange = ${change}\n\nTOTAL = ${round((total - change), 2)}\n\nWelcome again!")
+                print(f"\nRECEIPT\n\nReceived = ${total}\n\nChange = ${change}\n\nTOTAL = ${round((total - change), 2)}\n\nWelcome again!")
 
                 #Add cash to our cash counter
                 cash += 3.00
