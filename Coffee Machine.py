@@ -13,16 +13,14 @@ logo = '''
   \___/|_| |_/_/   \_\   \____\__,_|_|  \___|          
                                                  
 '''
-
-#Menu and prices
+print(logo)
 print("\nEspresso = $1.50")
 print("\nLatte = $2.50")
 print("\nCappuccino = $3.00")
-
 #Water and milk units in mililiters
 #Coffee unit in in grams
 resources = {
-    "water": 300,
+    "water": 3000,
     "milk": 2000,
     "coffee": 1000,
 
@@ -47,8 +45,6 @@ while making_coffee:
         quit()
     #User has chosen Espresso
     elif user_input == "espresso":
-
-        print(logo)
 
         #We check if there are enough resources to make coffee
         if resources['water'] >= 50 and resources['coffee'] >= 18:
@@ -117,7 +113,7 @@ while making_coffee:
     elif user_input == "latte":
 
         # We check if there are enough resources to make latte
-        if resources['water'] >= 50 and resources['milk'] >=150 and resources['coffee'] >= 18:
+        if resources['water'] >= 200 and resources['milk'] >=150 and resources['coffee'] >= 18:
 
             # Since there are enough resources,
             # We process the transaction
@@ -193,7 +189,7 @@ while making_coffee:
     elif user_input == "cappuccino":
 
         # We check if there are enough resources to make cappuccino
-        if resources['water'] >= 50 and resources['milk'] >= 150 and resources['coffee'] >= 18:
+        if resources['water'] >= 250 and resources['milk'] >= 150 and resources['coffee'] >= 18:
 
             # Since there are enough resources,
             # We process the transaction
@@ -268,9 +264,9 @@ while making_coffee:
     # to replenish the machine or check the amount of money the
     #machine has collected
     elif user_input == "report":
-        print(f"\nWater = {resources['water']} ml")
-        print(f"\nMilk = {resources['milk']} ml")
-        print(f"\nCoffee = {resources['coffee']} g")
+        print(f"\nWater = {resources['water']}ml")
+        print(f"\nMilk = {resources['milk']}ml")
+        print(f"\nCoffee = {resources['coffee']}g")
         print(f"\nCash = ${cash}")
 
     #User enters something strange
