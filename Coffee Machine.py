@@ -13,14 +13,16 @@ logo = '''
   \___/|_| |_/_/   \_\   \____\__,_|_|  \___|          
                                                  
 '''
-print(logo)
+
+#Menu and prices
 print("\nEspresso = $1.50")
 print("\nLatte = $2.50")
 print("\nCappuccino = $3.00")
+
 #Water and milk units in mililiters
 #Coffee unit in in grams
 resources = {
-    "water": 3000,
+    "water": 300,
     "milk": 2000,
     "coffee": 1000,
 
@@ -45,6 +47,8 @@ while making_coffee:
         quit()
     #User has chosen Espresso
     elif user_input == "espresso":
+
+        print(logo)
 
         #We check if there are enough resources to make coffee
         if resources['water'] >= 50 and resources['coffee'] >= 18:
@@ -264,9 +268,9 @@ while making_coffee:
     # to replenish the machine or check the amount of money the
     #machine has collected
     elif user_input == "report":
-        print(f"\nWater = {resources['water']}ml")
-        print(f"\nMilk = {resources['milk']}ml")
-        print(f"\nCoffee = {resources['coffee']}g")
+        print(f"\nWater = {resources['water']} ml")
+        print(f"\nMilk = {resources['milk']} ml")
+        print(f"\nCoffee = {resources['coffee']} g")
         print(f"\nCash = ${cash}")
 
     #User enters something strange
