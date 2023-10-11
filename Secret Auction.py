@@ -15,6 +15,8 @@ while bid_on:
     #Game start with the next bidder
     next_bidder = input("\nIs there another bidder? Type Y or N ").lower()
 
+
+
     #if response of next_bidder is y or yes then the game continues
     if next_bidder == "y" or next_bidder == "yes":
 
