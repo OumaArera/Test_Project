@@ -2,26 +2,26 @@ from turtle import Turtle, Screen
 from random import randint
 from time import sleep
 
-class Paddle:
+class Paddle(Turtle):
 
 
     def __init__(self, position):
         super().__init__()
-        self.my_paddle = Turtle(shape="square")
-        self.my_paddle.color("white")
-        self.my_paddle.penup()
-        self.my_paddle.shapesize(stretch_wid=3, stretch_len=1)
-        self.my_paddle.goto(position)
+        self.shape("square")
+        self.color("white")
+        self.shapesize(stretch_wid=3, stretch_len=1)
+        self.penup()
+        self.goto(position)
 
 
     def up(self):
-        self.new_y = self.my_paddle.ycor() + 20
-        self.my_paddle.goto(self.my_paddle.xcor(), self.new_y)
+        new_y = self.ycor() + 20
+        self.goto(self.xcor(), new_y)
 
 
     def down(self):
-        self.new_y = self.my_paddle.ycor() - 20
-        self.my_paddle.goto(self.my_paddle.xcor(), self.new_y)
+        new_y = self.ycor() - 20
+        self.goto(self.xcor(), new_y)
 
 
 class Ball(Turtle):
@@ -111,7 +111,7 @@ while game_on:
 
 
     #Detect ball collision with the paddles
-    if ball.distance(right_paddle) > 50 and ball.xcor() > 320 or ball.distance(left_paddle) > 50 and ball.xcor() < -320:
+    if ball.distance(right_paddle) < 50 or ball.distance(left_paddle) < 50:
         ball.bounce_x()
 
     #Detect when ball goes past the right paddle
