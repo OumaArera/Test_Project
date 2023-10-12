@@ -1,7 +1,41 @@
-from prettytable import PrettyTable
+import turtle
+from turtle import Turtle, Screen
+from random import choice, randint
 
-table = PrettyTable()
+opuk = Turtle()
+turtle.colormode(255)
+opuk.shape("arrow")
+opuk.color("brown")
+opuk.pensize(10)
+opuk.speed(100)
 
-table.add_column("Student Name",["James Ochuodho", "Brian Katembo", "John Ouma", "Antony Opiyo"])
-table.add_column("Class", ["Form 4G", "Form 4B", "Form 4Y", "Form 4R"])
-print(table)
+
+# colors = ["RoyalBlue", "SaddleBrown", "Indigo", "MediumBlue", "Black", "Yellow", "Red"]
+
+def random_color():
+    r = randint(0, 255)
+    g = randint(0, 255)
+    b = randint(0, 255)
+    color = (r, g, b)
+    return color
+
+
+
+
+
+
+
+def turtle_move():
+
+    for steps in range(36):
+        opuk.circle(200)
+        opuk.right(10)
+        opuk.color(random_color())
+
+
+
+turtle_move()
+
+screen = Screen()
+
+screen.exitonclick()

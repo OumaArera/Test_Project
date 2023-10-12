@@ -194,12 +194,11 @@ while game_on:
         score.game_over()
 
     #Detect collision with any part of the body
-    for segment in thuol.my_snake:
-        if segment == thuol.head:
-            pass
-        elif thuol.head.distance(segment) < 10:
+    for segment in thuol.my_snake[1:]:
+        if thuol.head.distance(segment) < 10:
             game_on = False
             score.game_over()
+
 
 #This ensures the screen doesn't varnish unless instructed
 screen.exitonclick()
